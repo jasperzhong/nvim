@@ -10,3 +10,12 @@
 - vimls: `npm i -g vim-language-server`
 - bashls: `npm i -g bash-language-server`
 - ltex: `yaourt -S ltex-ls-bin`
+
+## Auto-format
+
+- clang-format 
+- autopep8
+- gofmt 
+- rustfmt
+- remark: `npm install -g remake-cli`
+- shfmt: `go get -u mvdan.cc/sh/cmd/shfmt`

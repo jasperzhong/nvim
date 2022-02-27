@@ -1,10 +1,8 @@
 set nocompatible            " disable compatibility to old-time vi
 set showmatch               " show matching 
-set ignorecase              " case insensitive 
-set mouse=v                 " middle-click paste with 
+set ignorecase              " case insensitive set mouse=v                 " middle-click paste with 
 set hlsearch                " highlight search 
-set incsearch               " incremental search
-set tabstop=4               " number of columns occupied by a tab 
+set incsearch               " incremental search set tabstop=4               " number of columns occupied by a tab 
 set softtabstop=4           " see multiple spaces as tabstops so <BS> does the right thing
 set expandtab               " converts tabs to white space
 set shiftwidth=4            " width for autoindents
@@ -32,11 +30,19 @@ call plug#begin("~/.vim/plugged")
     Plug 'fisadev/vim-isort'
 call plug#end()
 
-
+" Generic key bindings  
 let mapleader="'"
 
-inoremap jk <ESC>
+inoremap jk <Esc>
 nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <F3> :Autoformat<CR>
+tnoremap <Esc> <C-\><C-n>
 
+" Debug 
+packadd termdebug 
+let g:termdebug_wide = 1
+let g:TermDebugging = 0
+au User TermdebugStartPre let g:TermDebugging = 1
+au User TermdebugStopPost let g:TermDebugging = 0
 
