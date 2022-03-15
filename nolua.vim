@@ -28,6 +28,7 @@ call plug#begin("~/.vim/plugged")
     Plug 'neovim/nvim-lspconfig'
     Plug 'Chiel92/vim-autoformat'
     Plug 'fisadev/vim-isort'
+    Plug 'preservim/tagbar'
 call plug#end()
 
 " Generic key bindings  
@@ -37,6 +38,7 @@ inoremap jk <Esc>
 nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <F3> :Autoformat<CR>
+nnoremap <C-b> :TagbarToggle<CR>
 tnoremap <Esc> <C-\><C-n>
 
 " Debug 
