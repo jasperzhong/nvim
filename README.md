@@ -4,6 +4,13 @@
 git clone https://github.com/yuchenzhong/nvim.git ~/.config/nvim
 ```
 
+Install the Vim-plug
+```sh
+curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+```
+
+Then open nvim and enter `:PlugInstall`.
+
 ## LSP
 
 - clangd: `sudo pacman -S clang`
