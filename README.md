@@ -1,5 +1,9 @@
 # My Neovim configuration 
 
+```sh
+git clone https://github.com/yuchenzhong/nvim.git ~/.config
+```
+
 ## LSP
 
 - clangd: `sudo pacman -S clang`
