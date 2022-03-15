@@ -1,7 +1,7 @@
 # My Neovim configuration 
 
 ```sh
-git clone https://github.com/yuchenzhong/nvim.git ~/.config
+git clone https://github.com/yuchenzhong/nvim.git ~/.config/nvim
 ```
 
 ## LSP
