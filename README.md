@@ -1,10 +1,30 @@
 # My Neovim configuration 
 
+1. install neovim 0.6+
+
+Ubuntu
+```sh
+sudo add-apt-repository ppa:neovim-ppa/stable
+sudo apt-get update
+sudo apt-get install neovim
+```
+
+ArchLinux
+```sh 
+sudo pacman -S neovim
+```
+
+Check the neovim's version
+```sh
+nvim --version
+```
+
+2. clone the repo 
 ```sh
 git clone https://github.com/yuchenzhong/nvim.git ~/.config/nvim
 ```
 
-Install the Vim-plug
+3. install the Vim-plug
 ```sh
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
