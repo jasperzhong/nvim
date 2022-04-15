@@ -33,8 +33,8 @@ Then open nvim and enter `:PlugInstall`.
 
 ## LSP
 
-- clangd: `sudo pacman -S clang`
-- cmake: `pip install cmake-language-server` 
+- clangd: `sudo pacman -S clang` (`sudo apt-get install -y clangd-10 && sudo ln -s /usr/bin/clangd-10 /usr/bin/clangd` in Ubuntu 18.04LTS)
+- cmake: `pip install cmake-language-server`  
 - pyright: `pip install pyright`
 - rust-analyzer: `sudo pacman -S rust-analyzer`
 - gopls: `go install golang.org/x/tools/gopls@latest`
@@ -44,8 +44,8 @@ Then open nvim and enter `:PlugInstall`.
 
 ## Auto-format
 
-- clang-format 
-- autopep8
+- clang-format (`sudo apt-get install -y clang-format`)
+- autopep8: `pip3 install autopep8`
 - gofmt 
 - rustfmt
 - remark: `npm install -g remake-cli`
