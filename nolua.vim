@@ -29,6 +29,9 @@ call plug#begin("~/.vim/plugged")
     Plug 'Chiel92/vim-autoformat'
     Plug 'fisadev/vim-isort'
     Plug 'preservim/tagbar'
+    Plug 'ms-jpq/coq_nvim', {'branch': 'coq'}
+    Plug 'ms-jpq/coq.thirdparty', {'branch': '3p'}
+    Plug 'stsewd/isort.nvim', { 'do': ':UpdateRemotePlugins' }
 call plug#end()
 
 " Generic key bindings  
@@ -37,9 +40,14 @@ let mapleader="'"
 inoremap jk <Esc>
 nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
-nnoremap <F3> :Autoformat<CR>
+nnoremap <C-y> :Autoformat<CR>
 nnoremap <C-b> :TagbarToggle<CR>
 tnoremap <Esc> <C-\><C-n>
+
+"Plugin
+let g:coq_settings = {'auto_start': v:true}
+let g:formatter_yapf_style = 'google'
+nnoremap <C-i> :Isort<CR>
 
 " Debug 
 packadd termdebug 
@@ -47,4 +55,3 @@ let g:termdebug_wide = 1
 let g:TermDebugging = 0
 au User TermdebugStartPre let g:TermDebugging = 1
 au User TermdebugStopPost let g:TermDebugging = 0
-
