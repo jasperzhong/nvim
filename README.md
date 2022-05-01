@@ -50,7 +50,3 @@ Then open nvim and enter `:PlugInstall`.
 - rustfmt
 - remark: `npm install -g remake-cli`
 - shfmt: `go get -u mvdan.cc/sh/cmd/shfmt`
-
-## TODO 
-
-- [ ] auto-completion
