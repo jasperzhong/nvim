@@ -1,4 +1,4 @@
-# My Neovim configuration 
+# Install 
 
 1. install neovim 0.6+
 
@@ -31,7 +31,9 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.g
 
 Then open nvim and enter `:PlugInstall`.
 
-## LSP
+
+
+## LSP install
 
 - clangd: `sudo pacman -S clang` (`sudo apt-get install -y clangd-10 && sudo ln -s /usr/bin/clangd-10 /usr/bin/clangd` in Ubuntu 18.04LTS)
 - cmake: `pip install cmake-language-server`  
@@ -42,7 +44,7 @@ Then open nvim and enter `:PlugInstall`.
 - bashls: `npm i -g bash-language-server`
 - ltex: `yaourt -S ltex-ls-bin`
 
-## Auto-format
+## Auto-format install
 
 - clang-format (`sudo apt-get install -y clang-format`)
 - autopep8: `pip3 install autopep8`
@@ -50,3 +52,23 @@ Then open nvim and enter `:PlugInstall`.
 - rustfmt
 - remark: `npm install -g remake-cli`
 - shfmt: `go get -u mvdan.cc/sh/cmd/shfmt`
+
+
+# Features 
+
+- Auto-completion from LSP, buffer, and Github Copilot. 
+- Linter
+
+# Shotcuts
+
+| command | operation | 
+| --- | --- |
+| `jk` | remap to `ESC` | 
+| `<C-t>`  | Toggle NERD Tree  | 
+| `<C-y>` | Autoformat | 
+| `<C-b>` | Toggle Tagbar |
+| `<C-i>` | Isort |
+|`<C-f>` | accept Github Copilot's suggestion | 
+
+
+
