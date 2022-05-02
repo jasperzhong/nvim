@@ -31,6 +31,13 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.g
 
 Then open nvim and enter `:PlugInstall`.
 
+4. python environment
+
+In your Python environment,
+```sh
+pip install neovim
+```
+
 
 
 ## LSP install

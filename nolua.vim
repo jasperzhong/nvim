@@ -49,6 +49,11 @@ let g:coq_settings = {'auto_start': v:true}
 let g:formatter_yapf_style = 'google'
 nnoremap <C-i> :Isort<CR>
 
+" Python
+if has('nvim') && !empty($CONDA_PREFIX)
+  let g:python3_host_prog = $CONDA_PREFIX . '/bin/python'
+endif
+
 " Debug 
 packadd termdebug 
 let g:termdebug_wide = 1
