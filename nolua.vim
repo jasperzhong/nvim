@@ -48,6 +48,7 @@ tnoremap <Esc> <C-\><C-n>
 let g:coq_settings = {'auto_start': v:true}
 let g:formatter_yapf_style = 'google'
 nnoremap <C-i> :Isort<CR>
+let NERDTreeShowHidden=1
 
 " Python
 if has('nvim') && !empty($CONDA_PREFIX)
