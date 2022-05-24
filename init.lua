@@ -23,7 +23,7 @@ for _, lsp in pairs(servers) do
 end
 
 -- C++ config
-nvim_lsp.clangd.setup{on_attach = on_attach, filetypes = {"c", "cpp", "objc", "objcpp", "cuda"},}
+nvim_lsp.clangd.setup{on_attach = on_attach, filetypes = {"c", "cpp", "objc", "objcpp", "cuda"}, cmd={"clangd", "-log=verbose"}}
 
 
 require("coq_3p"){
