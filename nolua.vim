@@ -49,6 +49,7 @@ let g:coq_settings = {'auto_start': v:true}
 let g:formatter_yapf_style = 'google'
 nnoremap <C-i> :Isort<CR>
 let NERDTreeShowHidden=1
+au BufRead *.cu set filetype=cpp
 
 " Python
 if has('nvim') && !empty($CONDA_PREFIX)
