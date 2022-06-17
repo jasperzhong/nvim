@@ -1,8 +1,8 @@
 set nocompatible            " disable compatibility to old-time vi
-set showmatch               " show matching 
-set ignorecase              " case insensitive set mouse=v                 " middle-click paste with 
-set hlsearch                " highlight search 
-set incsearch               " incremental search set tabstop=4               " number of columns occupied by a tab 
+set showmatch               " show matching
+set ignorecase              " case insensitive set mouse=v                 " middle-click paste with
+set hlsearch                " highlight search
+set incsearch               " incremental search set tabstop=4               " number of columns occupied by a tab
 set softtabstop=4           " see multiple spaces as tabstops so <BS> does the right thing
 set expandtab               " converts tabs to white space
 set shiftwidth=4            " width for autoindents
@@ -22,19 +22,19 @@ set ttyfast                 " Speed up scrolling in Vim
 " set backupdir=~/.cache/vim " Directory to store backup files.
 
 call plug#begin("~/.vim/plugged")
-    Plug 'jiangmiao/auto-pairs'
-    Plug 'scrooloose/nerdtree'
-    Plug 'github/copilot.vim'
-    Plug 'neovim/nvim-lspconfig'
-    Plug 'Chiel92/vim-autoformat'
-    Plug 'fisadev/vim-isort'
-    Plug 'preservim/tagbar'
-    Plug 'ms-jpq/coq_nvim', {'branch': 'coq'}
-    Plug 'ms-jpq/coq.thirdparty', {'branch': '3p'}
-    Plug 'stsewd/isort.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'jiangmiao/auto-pairs'
+Plug 'scrooloose/nerdtree'
+Plug 'github/copilot.vim'
+Plug 'neovim/nvim-lspconfig'
+Plug 'Chiel92/vim-autoformat'
+Plug 'fisadev/vim-isort'
+Plug 'preservim/tagbar'
+Plug 'ms-jpq/coq_nvim', {'branch': 'coq'}
+Plug 'ms-jpq/coq.thirdparty', {'branch': '3p'}
+Plug 'stsewd/isort.nvim', { 'do': ':UpdateRemotePlugins' }
 call plug#end()
 
-" Generic key bindings  
+" Generic key bindings
 let mapleader="'"
 
 inoremap jk <Esc>
@@ -46,18 +46,19 @@ tnoremap <Esc> <C-\><C-n>
 
 "Plugin
 let g:coq_settings = {'auto_start': v:true}
-let g:formatter_yapf_style = 'google'
+let g:formatdef_autopep8 = '"autopep8 - --max-line-length=80 --experimental"'
+let g:formatters_python = ['autopep8']
 nnoremap <C-i> :Isort<CR>
 let NERDTreeShowHidden=1
 au BufRead *.cu set filetype=cpp
 
 " Python
 if has('nvim') && !empty($CONDA_PREFIX)
-  let g:python3_host_prog = $CONDA_PREFIX . '/bin/python'
+    let g:python3_host_prog = $CONDA_PREFIX . '/bin/python'
 endif
 
-" Debug 
-packadd termdebug 
+" Debug
+packadd termdebug
 let g:termdebug_wide = 1
 let g:TermDebugging = 0
 au User TermdebugStartPre let g:TermDebugging = 1
