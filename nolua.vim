@@ -46,7 +46,7 @@ tnoremap <Esc> <C-\><C-n>
 
 "Plugin
 let g:coq_settings = {'auto_start': v:true}
-let g:formatdef_autopep8 = '"autopep8 - --max-line-length=80 --experimental"'
+let g:formatdef_autopep8 = '"autopep8 - --max-line-length=80"'
 let g:formatters_python = ['autopep8']
 nnoremap <C-i> :Isort<CR>
 let NERDTreeShowHidden=1
