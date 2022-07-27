@@ -32,6 +32,7 @@ Plug 'preservim/tagbar'
 Plug 'ms-jpq/coq_nvim', {'branch': 'coq'}
 Plug 'ms-jpq/coq.thirdparty', {'branch': '3p'}
 Plug 'stsewd/isort.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'alvan/vim-closetag'
 call plug#end()
 
 " Generic key bindings

@@ -17,7 +17,7 @@ local on_attach = function(client) vim.api.nvim_set_keymap('n', 'gD', '<cmd>lua 
     vim.api.nvim_set_keymap('n', '<space>f', '<cmd>lua vim.lsp.buf.formatting()<CR>', {})
 end
 local servers = {'pyright', 'vimls', 'rust_analyzer', 'gopls',
-'cmake', 'bashls', 'ltex'}
+'cmake', 'bashls', 'ltex', 'html'}
 for _, lsp in pairs(servers) do
     nvim_lsp[lsp].setup{on_attach = on_attach}
 end
