@@ -38,6 +38,14 @@ In your Python environment,
 pip install neovim
 ```
 
+5. other
+
+NodeJS (used by Github Copilot)
+
+```sh
+curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
+sudo apt-get install -y nodejs
+```
 
 
 ## LSP install
