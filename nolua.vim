@@ -43,13 +43,13 @@ nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-y> :Autoformat<CR>
 nnoremap <C-b> :TagbarToggle<CR>
+nnoremap <C-u> :Isort<CR>
 tnoremap <Esc> <C-\><C-n>
 
 "Plugin
 let g:coq_settings = {'auto_start': v:true}
 let g:formatdef_autopep8 = '"autopep8 - --max-line-length=80"'
 let g:formatters_python = ['autopep8']
-nnoremap <C-i> :Isort<CR>
 let NERDTreeShowHidden=1
 au BufRead *.cu set filetype=cpp
 
