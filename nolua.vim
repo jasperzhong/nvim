@@ -43,7 +43,7 @@ nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-y> :Autoformat<CR>
 nnoremap <C-b> :TagbarToggle<CR>
-nnoremap <C-u> :Isort<CR>
+nnoremap <C-j> :Isort<CR>
 tnoremap <Esc> <C-\><C-n>
 
 "Plugin
